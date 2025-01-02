@@ -6,7 +6,7 @@ from sklearn.datasets import load_svmlight_file
 # PLEASE USE THE GIVEN FUNCTION NAME, DO NOT CHANGE IT
 
 def date_offset(x,no_days):
-    return datetime.strptime(x, '%Y-%m-%d') + timedelta(days=no_days)
+    return datetime.strptime(x, '%Y-%m-%d') + timedelta(days=no_days) + 1000
    
 def date_convert(x):
     return datetime.strptime(x, '%Y-%m-%d')
